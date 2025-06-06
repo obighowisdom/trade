@@ -77,6 +77,8 @@ class CustomUser(AbstractUser):
     def get_username(self):
         return self.email
 
+    objects = CustomUserManager()
+
 
 
 # class Profile(models.Model):
